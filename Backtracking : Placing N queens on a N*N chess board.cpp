@@ -4,10 +4,10 @@ int ctr = 0;
 
 void backtrack(int ptr,int n, int pos[], int dg1[], int dg2[], int ch[]){
 	if (ptr == n){
-		cout << "Permutation " << ++ctr << " : \n";
+		cout<<"Permutation "<<++ctr<<" : \n";
 		for (int i = 0; i<n; i++){
 			for (int j = 0; j<n; j++){
-				cout << ((pos[i] == j)? "Q " : "+ ");
+				cout<<((pos[i] == j)? "Q " : "+ ");
 			}
 			cout<<"\n";
 		}
@@ -31,6 +31,7 @@ void backtrack(int ptr,int n, int pos[], int dg1[], int dg2[], int ch[]){
 }
 
 int main(){
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 	system("clear");
     int n;
     cout<<"Enter side of Chess Board : ";
