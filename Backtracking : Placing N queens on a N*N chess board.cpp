@@ -2,7 +2,7 @@
 using namespace std;
 int ctr = 0;
 
-void backtrack(int ptr,int n, int pos[], int dg1[], int dg2[], int ch[]){
+void backtrack(int ptr, int n, int pos[], int dg1[], int dg2[], int ch[]){
 	if (ptr == n){
 		cout<<"Permutation "<<++ctr<<" : \n";
 		for (int i = 0; i<n; i++){
